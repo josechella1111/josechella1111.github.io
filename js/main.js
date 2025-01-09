@@ -6,7 +6,6 @@ let rptas = [];
 let explicaciones = [];
 let imagenes = [];
 let puntaje = 0;
-const tiempo = 15;
 let countdownfunction;
 
 function empezarJuego() {
@@ -105,27 +104,6 @@ function cargarPreguntasEnPantalla(indice) {
     }
 
     document.getElementById('alternativas').innerHTML = opciones;
-    iniciarTimer();
-}
-
-function iniciarTimer() {
-    let trestante = tiempo;
-    document.getElementById('timer').innerHTML = trestante;
-    countdownfunction = setInterval(function () {
-        trestante--;
-
-        if (trestante === 0) {
-            document.getElementById("timer").innerHTML = "X";
-            sinContestar.push(index);
-            siguiente();
-        } else if (trestante < 0) {
-            trestante = tiempo;
-            siguiente();
-        } else {
-            document.getElementById('timer').innerHTML = trestante;
-        }
-
-    }, 1000);
 }
 
 function checkRpta(rpta) {

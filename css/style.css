@@ -94,19 +94,6 @@ body {
     padding-top: 20px;
 }
 
-/* Estilo del temporizador */
-#timer {
-    color: rgb(185, 12, 99);
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 30px;
-    border: 3px solid black;
-    width: 26px;
-    font-weight: bold;
-    text-align: center;
-    margin: 0 auto;
-}
-
 /* Estilos de los botones en la pantalla de resultados */
 #divresultado {
     font-size: 18px;
